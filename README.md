@@ -1,16 +1,10 @@
-# ReduxSimpleStarter
-Duplicated from [https://github.com/StephenGrider/ReactStarter](https://github.com/StephenGrider/ReactStarter)
+# Personal Website
 
 ### Getting Started ###
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git? #####
-Checkout this repo, install depdencies, then start the gulp process with the following:
-
 ```
-	> git clone git@github.com:atakangktepe/ReactReduxStarter.git
-	> cd ReactReduxStarter
+	> git clone git@github.com:atakangktepe/personal-website.git
+	> cd personal-website
 	> npm install
 	> npm start
 ```
