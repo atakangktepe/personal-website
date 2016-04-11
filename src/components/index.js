@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Nav from './nav';
+import Nav from './nav/index.js';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <main>
         <Nav />
-        
-      </div>
-    );
+        {this.props.children}
+      </main>
+    )
   }
 }
