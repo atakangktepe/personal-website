@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import Posts from '../blogs/'
+import Repos from '../repos/'
 
 class Home extends Component {
   render() {
     return (
       <div>
-        homead
+        home page
+
+        <Repos />
+        <Posts />
       </div>
     )
   }
