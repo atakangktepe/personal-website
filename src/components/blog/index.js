@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Posts extends Component {
+export default class Blog extends Component {
   constructor (props) {
     super(props);
 
@@ -22,8 +22,12 @@ class Posts extends Component {
       postList = this.state.posts.map((post) => {
        return (
          <div key={post.id}>
-           <a href={post.link} dangerouslySetInnerHTML={{__html: post.title.rendered}}>
-           </a>
+           <h3>
+             <a href={post.link} dangerouslySetInnerHTML={{__html: post.title.rendered}}>
+             </a>
+           </h3>
+           <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered.substring(0, 150) + '...' }}> 
+           </p>
          </div>
        )
      });
@@ -39,5 +43,3 @@ class Posts extends Component {
     )
   }
 }
-
-export default Posts;
